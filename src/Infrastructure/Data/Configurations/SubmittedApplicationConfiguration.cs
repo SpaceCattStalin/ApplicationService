@@ -32,6 +32,10 @@ namespace Infrastructure.Data.Configurations
                 .WithOne()
                 .HasForeignKey(h => h.ApplicationId)
                 .OnDelete(DeleteBehavior.Cascade);
+            builder.HasMany<ApplicationComment>()
+                .WithOne()
+                .HasForeignKey(c => c.ApplicationId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
