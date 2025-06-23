@@ -2,10 +2,9 @@
 {
     public enum ApplicationStatus
     {
-        Watting,
+        Waiting,
         InProgress,
         Approved,
-        Success,
-        Failed
+        Rejected
     }
 }
